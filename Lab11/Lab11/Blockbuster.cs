@@ -13,6 +13,7 @@ namespace Lab11
 
         public Blockbuster()
         {
+            // Hardcode movies in. In "real life" this would come in as a file and this class would take some sort of list parameter. 
             this.Movies = new List<Movie>(){
                 new DVD("Spaceballs", "Comedy", 120, new List<string>() { "Capture Vespa", "Blow Up DeathStar", "Pizza the Hut" }),
                 new DVD("Star Wars Holiday Special", "Hot Mess", 80, new List<string>() { "Cantina Scene", "Jefferson Starship", "Bobba Fett Cartoon" }),
@@ -37,6 +38,7 @@ namespace Lab11
             }
         }
 
+        // Ask the user which movie they want
         public void Checkout()
         {
             PrintMovies();
